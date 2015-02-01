@@ -1,0 +1,380 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "cities and memory"
+    },
+    {
+      "id": 2,
+      "name": "cities and desire"
+    },
+    {
+      "id": 3,
+      "name": "cities and signs"
+    },
+    {
+      "id": 4,
+      "name": "thin cities"
+    },
+    {
+      "id": 5,
+      "name": "trading cities"
+    },
+    {
+      "id": 6,
+      "name": "cities and eyes"
+    },
+    {
+      "id": 7,
+      "name": "cities and names"
+    },
+    {
+      "id": 8,
+      "name": "cities and the dead"
+    },
+    {
+      "id": 9,
+      "name": "cities and the sky"
+    },
+    {
+      "id": 10,
+      "name": "continuous cities"
+    },
+    {
+      "id": 11,
+      "name": "hidden cities"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Diomira",
+      "groupId": 1,
+      "groupOrder": 1,
+      "chapter": 1
+    },
+    {
+      "name": "Isidora",
+      "groupId": 1,
+      "groupOrder": 2,
+      "chapter": 1
+    },
+    {
+      "name": "Dorothea",
+      "groupId": 2,
+      "groupOrder": 1,
+      "chapter": 1
+    },
+    {
+      "name": "Zaira",
+      "groupId": 1,
+      "groupOrder": 3,
+      "chapter": 1
+    },
+    {
+      "name": "Anastasia",
+      "groupId": 2,
+      "groupOrder": 2,
+      "chapter": 1
+    },
+    {
+      "name": "Tamara",
+      "groupId": 3,
+      "groupOrder": 1,
+      "chapter": 1
+    },
+    {
+      "name": "Zora",
+      "groupId": 1,
+      "groupOrder": 4,
+      "chapter": 1
+    },
+    {
+      "name": "Despina",
+      "groupId": 2,
+      "groupOrder": 3,
+      "chapter": 1
+    },
+    {
+      "name": "Zirma",
+      "groupId": 3,
+      "groupOrder": 2,
+      "chapter": 1
+    },
+    {
+      "name": "Isaura",
+      "groupId": 4,
+      "groupOrder": 1,
+      "chapter": 1
+    },
+    {
+      "name": "Maurilia",
+      "groupId": 1,
+      "groupOrder": 5,
+      "chapter": 2
+    },
+    {
+      "name": "Fedora",
+      "groupId": 2,
+      "groupOrder": 4,
+      "chapter": 2
+    },
+    {
+      "name": "Zoe",
+      "groupId": 3,
+      "groupOrder": 3,
+      "chapter": 2
+    },
+    {
+      "name": "Zenobia",
+      "groupId": 4,
+      "groupOrder": 2,
+      "chapter": 2
+    },
+    {
+      "name": "Euphemia",
+      "groupId": 5,
+      "groupOrder": 1,
+      "chapter": 2
+    },
+    {
+      "name": "Zobeide",
+      "groupId": 2,
+      "groupOrder": 5,
+      "chapter": 3
+    },
+    {
+      "name": "Hypatia",
+      "groupId": 3,
+      "groupOrder": 4,
+      "chapter": 3
+    },
+    {
+      "name": "Armilla",
+      "groupId": 4,
+      "groupOrder": 3,
+      "chapter": 3
+    },
+    {
+      "name": "Chloe",
+      "groupId": 5,
+      "groupOrder": 2,
+      "chapter": 3
+    },
+    {
+      "name": "Valdrada",
+      "groupId": 6,
+      "groupOrder": 1,
+      "chapter": 3
+    },
+    {
+      "name": "Olivia",
+      "groupId": 3,
+      "groupOrder": 5,
+      "chapter": 4
+    },
+    {
+      "name": "Sophronia",
+      "groupId": 4,
+      "groupOrder": 4,
+      "chapter": 4
+    },
+    {
+      "name": "Eutropia",
+      "groupId": 5,
+      "groupOrder": 3,
+      "chapter": 4
+    },
+    {
+      "name": "Zemrude",
+      "groupId": 6,
+      "groupOrder": 2,
+      "chapter": 4
+    },
+    {
+      "name": "Aglaura",
+      "groupId": 7,
+      "groupOrder": 1,
+      "chapter": 4
+    },
+    {
+      "name": "Octavia",
+      "groupId": 4,
+      "groupOrder": 5,
+      "chapter": 5
+    },
+    {
+      "name": "Ersilia",
+      "groupId": 5,
+      "groupOrder": 4,
+      "chapter": 5
+    },
+    {
+      "name": "Baucis",
+      "groupId": 6,
+      "groupOrder": 3,
+      "chapter": 5
+    },
+    {
+      "name": "Leandra",
+      "groupId": 7,
+      "groupOrder": 2,
+      "chapter": 5
+    },
+    {
+      "name": "Melania",
+      "groupId": 8,
+      "groupOrder": 1,
+      "chapter": 5
+    },
+    {
+      "name": "Esmeralda",
+      "groupId": 5,
+      "groupOrder": 5,
+      "chapter": 6
+    },
+    {
+      "name": "Phyllis",
+      "groupId": 6,
+      "groupOrder": 4,
+      "chapter": 6
+    },
+    {
+      "name": "Pyrrha",
+      "groupId": 7,
+      "groupOrder": 3,
+      "chapter": 6
+    },
+    {
+      "name": "Adelma",
+      "groupId": 8,
+      "groupOrder": 2,
+      "chapter": 6
+    },
+    {
+      "name": "Eudoxia",
+      "groupId": 9,
+      "groupOrder": 1,
+      "chapter": 6
+    },
+    {
+      "name": "Moriana",
+      "groupId": 6,
+      "groupOrder": 5,
+      "chapter": 7
+    },
+    {
+      "name": "Clarice",
+      "groupId": 7,
+      "groupOrder": 4,
+      "chapter": 7
+    },
+    {
+      "name": "Eusapia",
+      "groupId": 8,
+      "groupOrder": 3,
+      "chapter": 7
+    },
+    {
+      "name": "Beersheba",
+      "groupId": 9,
+      "groupOrder": 2,
+      "chapter": 7
+    },
+    {
+      "name": "Leonia",
+      "groupId": 10,
+      "groupOrder": 1,
+      "chapter": 7
+    },
+    {
+      "name": "Irene",
+      "groupId": 7,
+      "groupOrder": 5,
+      "chapter": 8
+    },
+    {
+      "name": "Argia",
+      "groupId": 8,
+      "groupOrder": 4,
+      "chapter": 8
+    },
+    {
+      "name": "Thekla",
+      "groupId": 9,
+      "groupOrder": 3,
+      "chapter": 8
+    },
+    {
+      "name": "Trude",
+      "groupId": 10,
+      "groupOrder": 2,
+      "chapter": 8
+    },
+    {
+      "name": "Olinda",
+      "groupId": 11,
+      "groupOrder": 1,
+      "chapter": 8
+    },
+    {
+      "name": "Laudomia",
+      "groupId": 8,
+      "groupOrder": 5,
+      "chapter": 9
+    },
+    {
+      "name": "Perinthia",
+      "groupId": 9,
+      "groupOrder": 4,
+      "chapter": 9
+    },
+    {
+      "name": "Procopia",
+      "groupId": 10,
+      "groupOrder": 3,
+      "chapter": 9
+    },
+    {
+      "name": "Raissa",
+      "groupId": 11,
+      "groupOrder": 2,
+      "chapter": 9
+    },
+    {
+      "name": "Andria",
+      "groupId": 9,
+      "groupOrder": 5,
+      "chapter": 9
+    },
+    {
+      "name": "Cecilia",
+      "groupId": 10,
+      "groupOrder": 4,
+      "chapter": 9
+    },
+    {
+      "name": "Marozia",
+      "groupId": 11,
+      "groupOrder": 3,
+      "chapter": 9
+    },
+    {
+      "name": "Penthesilea",
+      "groupId": 10,
+      "groupOrder": 5,
+      "chapter": 9
+    },
+    {
+      "name": "Theodora",
+      "groupId": 11,
+      "groupOrder": 4,
+      "chapter": 9
+    },
+    {
+      "name": "Berenice",
+      "groupId": 11,
+      "groupOrder": 5,
+      "chapter": 9
+    }
+  ]
+}
