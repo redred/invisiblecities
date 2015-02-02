@@ -16,7 +16,8 @@ define [
     $.ajax(
       url: url
     ).done( (data) ->
-      renderAll(data)
+      d = if typeof data == 'string' then JSON.parse data else data
+      renderAll(d)
     )
 
   render = (opts) ->

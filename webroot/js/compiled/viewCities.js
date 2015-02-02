@@ -9,7 +9,9 @@ define(['jquery', 'mustache', 'baseUtil'], function($, Mustache, baseUtil) {
     return $.ajax({
       url: url
     }).done(function(data) {
-      return renderAll(data);
+      var d;
+      d = typeof data === 'string' ? JSON.parse(data) : data;
+      return renderAll(d);
     });
   };
   render = function(opts) {

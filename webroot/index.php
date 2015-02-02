@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <title>Invisible Cities</title>
   <script 
-    data-main="js/compiled/require-config" 
+    data-main="js/compiled/config" 
     src="js/lib/require/require.js"></script>
   <link 
     rel="stylesheet" 
     type="text/css" 
     href="css/compiled/style.css">
-<body class="home">
+</head>
+<body>
   <script id="tmpl-groups" type="x-tmpl-mustache">
     <table data-id="groups">
       <tbody>
