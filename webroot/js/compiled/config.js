@@ -4,6 +4,7 @@ requirejs.config({
     'requirelib': 'lib/require',
     'jquery': 'lib/jquery/jquery-1.11.1.min',
     'jqueryui': 'lib/jquery/jquery-ui-1.10.4.custom',
+    'underscore': 'lib/underscore/underscore-min',
     'mustache': 'lib/mustachejs/mustache.min',
     'baseUtil': 'compiled/baseUtil',
     'viewCities': 'compiled/viewCities'
@@ -16,4 +17,4 @@ requirejs.config({
   'urlArgs': "bust=" + (new Date()).getTime()
 });
 
-requirejs(['jquery', 'jqueryui', 'mustache', 'baseUtil', 'viewCities']);
+requirejs(['jquery', 'jqueryui', 'underscore', 'mustache', 'baseUtil', 'viewCities']);
