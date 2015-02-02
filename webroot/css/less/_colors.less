@@ -1,0 +1,37 @@
+
+@black:         #000;
+@white:         #fff;
+@red:           #cc0000;
+@grey-med:      #bebebe;
+@grey-light:    #ccc;
+@grey-lightest: #eee;
+
+#colors-groups {
+
+  /* Qualitative color palette 
+   * courtesy of http://colorbrewer2.com
+   */
+  @colors: 
+    #a6cee3,
+    #1f78b4,
+    #b2df8a,
+    #33a02c,
+    #fb9a99,
+    #e31a1c,
+    #fdbf6f,
+    #ff7f00,
+    #cab2d6,
+    #6a3d9a,
+    #ffff99;
+
+  .bg() {
+    .loop (@i) when (@i <= length(@colors)) {
+      &[data-group-id="@{i}"] {
+        background-color: extract(@colors, @i);
+      }
+      .loop(@i + 1);
+    }
+    .loop(@i: 1);
+  }
+
+}

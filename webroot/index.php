@@ -3,23 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>Invisible Cities</title>
-  <script data-main="js/compiled/require-config" src="js/lib/require/require.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/compiled/style.css">
-  <script>
-  </script>
-  <style type="text/css">
-  </style>
+  <script 
+    data-main="js/compiled/require-config" 
+    src="js/lib/require/require.js"></script>
+  <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="css/compiled/style.css">
 <body class="home">
-<div class="page">
-  <header>
-    <h2>Invisible Cities</h2>
-  </header>
-  <section class="body">
-    
-  </section>
-  <footer>
-    &copy; 2015 Footer
-  </footer>
-</div>
+  <script id="tmpl-groups" type="x-tmpl-mustache">
+    <table data-id="groups">
+      <tbody>
+      {{#groups}}
+        <tr data-group-id="{{id}}">
+          <td>{{id}}</td>
+          <td data-id="{{id}}">{{name}}</td>
+        </tr>
+      {{/groups}}
+      </tbody>
+    </table>
+  </script>
+  <script id="tmpl-cities" type="x-tmpl-mustache">
+    <table data-id="cities">
+    {{#cities}}
+      <tr data-group-id="{{groupId}}">
+        <td>{{name}}</td>
+        <td>{{groupOrder}}</td>
+      </tr>
+    {{/cities}}
+    </table>
+  </script>
+  <div class="page">
+    <header>
+      <h2>Invisible Cities</h2>
+    </header>
+    <section class="body">
+    </section>
+    <footer>
+    </footer>
+  </div>
 </body>
 </html>

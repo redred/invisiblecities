@@ -1,0 +1,24 @@
+@import '_reset';
+@import '_colors';
+@import '_fonts';
+
+body {
+  font-family: @font-sans;
+  font-size: 14px;
+  font-color: @black;
+}
+table {
+  width: 200px;
+  padding: 10px 10px 10px 0;
+  float: left;
+  tr {
+    background-color: @grey-lightest;
+    #colors-groups > .bg();
+  }
+  td {
+    padding: 6px 10px 4px 10px;
+  }
+}
+.page {
+  padding: 10px;
+}
