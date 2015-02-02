@@ -14,6 +14,13 @@
 <body>
   <script id="tmpl-groups" type="x-tmpl-mustache">
     <table data-id="groups">
+      {{#title}}
+        <thead>
+          <tr>
+            <th>{{title}}</th>
+          </tr>
+        </thead>
+      {{/title}}
       <tbody>
       {{#groups}}
         <tr data-group-id="{{id}}">
@@ -26,12 +33,21 @@
   </script>
   <script id="tmpl-cities" type="x-tmpl-mustache">
     <table data-id="cities">
-    {{#cities}}
-      <tr data-group-id="{{groupId}}">
-        <td>{{name}}</td>
-        <td>{{groupOrder}}</td>
-      </tr>
-    {{/cities}}
+      {{#title}}
+        <thead>
+          <tr>
+            <th>{{title}}</th>
+          </tr>
+        </thead>
+      {{/title}}
+      {{#cities}}
+        <tr data-group-id="{{groupId}}">
+          <td>{{name}}</td>
+          {{#groupOrder}}
+            <td>{{groupOrder}}</td>
+          {{/groupOrder}}
+        </tr>
+      {{/cities}}
     </table>
   </script>
   <div class="page">
