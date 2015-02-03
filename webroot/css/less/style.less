@@ -1,4 +1,10 @@
+/**
+ * Main CSS aggregator
+ *
+ */
+
 @import '_reset';
+@import '_mixins';
 @import '_colors';
 @import '_fonts';
 
@@ -28,4 +34,7 @@ table {
 }
 .page {
   padding: 10px;
+}
+section {
+  .clearfix();
 }
