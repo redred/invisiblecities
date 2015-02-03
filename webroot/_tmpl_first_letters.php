@@ -4,6 +4,10 @@
       <tr>
         <th>{{title}}</th>
       </tr>
+      <tr>
+        <td>letter</td>
+        <td>count</td>
+      </tr>
     </thead>
     {{#firstLetters}}
       <tr>

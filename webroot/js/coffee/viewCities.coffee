@@ -19,6 +19,10 @@ define [
       url: url
     ).done( (data) ->
       d = if typeof data == 'string' then JSON.parse data else data
+      _.each(d.cities, (obj, i) ->
+        obj.order = i + 1
+      )
+      debug d
       renderAll(d)
     )
 
@@ -33,7 +37,7 @@ define [
     render(
       target: 'section.body-1'
       data: data
-      template: '#tmpl-textarea'
+      template: '#tmpl-text'
     )
 
     render(
@@ -61,7 +65,7 @@ define [
       target: 'section.body-1'
       data: 
         cities: citiesAlphabetical
-      template: '#tmpl-cities'
+      template: '#tmpl-cities-alphabetical'
     )
 
     firstLetters = []
@@ -83,7 +87,7 @@ define [
       firstLetters: firstLetters
     debug firstLetterData
     render(
-      title: 'First Letters'
+      title: 'First Letter Frequency'
       target: 'section.body-1'
       data: firstLetterData
       template: '#tmpl-first-letters'

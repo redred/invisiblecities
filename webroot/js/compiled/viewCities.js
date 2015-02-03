@@ -11,6 +11,10 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
     }).done(function(data) {
       var d;
       d = typeof data === 'string' ? JSON.parse(data) : data;
+      _.each(d.cities, function(obj, i) {
+        return obj.order = i + 1;
+      });
+      debug(d);
       return renderAll(d);
     });
   };
@@ -29,7 +33,7 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
     render({
       target: 'section.body-1',
       data: data,
-      template: '#tmpl-textarea'
+      template: '#tmpl-text'
     });
     render({
       title: 'Groups',
@@ -55,7 +59,7 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
       data: {
         cities: citiesAlphabetical
       },
-      template: '#tmpl-cities'
+      template: '#tmpl-cities-alphabetical'
     });
     firstLetters = [];
     for (i = _j = 0, _len1 = citiesAlphabetical.length; _j < _len1; i = ++_j) {
@@ -82,7 +86,7 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
     };
     debug(firstLetterData);
     return render({
-      title: 'First Letters',
+      title: 'First Letter Frequency',
       target: 'section.body-1',
       data: firstLetterData,
       template: '#tmpl-first-letters'

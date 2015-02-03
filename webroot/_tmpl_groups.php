@@ -5,6 +5,10 @@
         <tr>
           <th>{{title}}</th>
         </tr>
+        <tr>
+          <td>order</td>
+          <td>name</td>
+        </tr>
       </thead>
     {{/title}}
     <tbody>

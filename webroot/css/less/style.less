@@ -21,14 +21,15 @@ header {
 .page-description {
   padding: 0 0 20px 0;
 }
-textarea[data-id="textarea"] {
-  width: 732px;
-  height: 100px;
+.text {
+  width: 500px;
   font-family: @font-sans;
   font-size: 13px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background-color: @grey-lightest;
 }
 table {
-  width: 200px;
   padding: 0;
   float: left;
   tr {
@@ -51,6 +52,16 @@ table {
     .character {
       text-transform: uppercase;
     }
+  }
+  width: 200px;
+  &[data-id="cities"] {
+    width: 300px;
+  }
+  &[data-id="cities-alphabetical"] {
+    width: 150px;
+  }
+  &[data-id="first-letters"] {
+    width: 220px;
   }
 }
 .page {

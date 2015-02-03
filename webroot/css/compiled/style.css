@@ -49,16 +49,18 @@ header {
 .page-description {
   padding: 0 0 20px 0;
 }
-textarea[data-id="textarea"] {
-  width: 732px;
-  height: 100px;
+.text {
+  width: 500px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background-color: #eeeeee;
 }
 table {
-  width: 200px;
   padding: 0;
   float: left;
+  width: 200px;
 }
 table tr {
   background-color: #eeeeee;
@@ -112,6 +114,15 @@ table[data-id="first-letters"] {
 }
 table[data-id="first-letters"] .character {
   text-transform: uppercase;
+}
+table[data-id="cities"] {
+  width: 300px;
+}
+table[data-id="cities-alphabetical"] {
+  width: 150px;
+}
+table[data-id="first-letters"] {
+  width: 220px;
 }
 .page {
   padding: 10px;

@@ -15,9 +15,10 @@
 <body>
 <?php
 
-  include('_tmpl_textarea.php');
+  include('_tmpl_text.php');
   include('_tmpl_groups.php');
   include('_tmpl_cities.php');
+  include('_tmpl_cities_alphabetical.php');
   include('_tmpl_first_letters.php');
 
 ?>
