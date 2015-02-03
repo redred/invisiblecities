@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-US" class="no-js">
 <head>
   <meta charset="utf-8">
   <title>Invisible Cities</title>
+  <script src="js/lib/modernizr/modernizr.custom.85350.js"></script>
   <script 
     data-main="js/compiled/config" 
     src="js/lib/require/require.js"></script>
