@@ -54,8 +54,8 @@
     <header>
       <h2>Invisible Cities</h2>
     </header>
-    <section class="body">
-    </section>
+    <section class="body body-1"></section>
+    <section class="body body-2"></section>
     <footer>
     </footer>
   </div>

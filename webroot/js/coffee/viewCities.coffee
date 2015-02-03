@@ -32,13 +32,13 @@ define [
   renderAll = (data) ->
     render(
       title: 'Groups'
-      target: 'section.body'
+      target: 'section.body-1'
       data: data
       template: '#tmpl-groups'
     )
     render(
       title: 'Cities Original'
-      target: 'section.body'
+      target: 'section.body-1'
       data: data
       template: '#tmpl-cities'
     )
@@ -54,7 +54,7 @@ define [
     # debug citiesAlphabetical
     render(
       title: 'Cities Alphabetical'
-      target: 'section.body'
+      target: 'section.body-1'
       data: 
         cities: citiesAlphabetical
       template: '#tmpl-cities'
