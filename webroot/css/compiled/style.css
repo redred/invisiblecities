@@ -49,6 +49,12 @@ header {
 .page-description {
   padding: 0 0 20px 0;
 }
+textarea[data-id="textarea"] {
+  width: 732px;
+  height: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
 table {
   width: 200px;
   padding: 0;
@@ -100,6 +106,12 @@ table thead tr {
 table th {
   background-color: transparent;
   text-align: left;
+}
+table[data-id="first-letters"] {
+  width: 140px;
+}
+table[data-id="first-letters"] .character {
+  text-transform: uppercase;
 }
 .page {
   padding: 10px;

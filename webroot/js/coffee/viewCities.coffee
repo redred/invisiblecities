@@ -31,23 +31,27 @@ define [
 
   renderAll = (data) ->
     render(
+      target: 'section.body-1'
+      data: data
+      template: '#tmpl-textarea'
+    )
+
+    render(
       title: 'Groups'
       target: 'section.body-1'
       data: data
       template: '#tmpl-groups'
     )
+
     render(
       title: 'Cities Original'
       target: 'section.body-1'
       data: data
       template: '#tmpl-cities'
     )
-    citiesAlphabetical = data.cities
-    citiesAlphabetical = _.sortBy(
-      citiesAlphabetical
-      (o) ->
-        o.name
-    )
+
+    citiesAlphabetical = sortAlphabetical(data.cities, 'name')
+
     for city in citiesAlphabetical
       city.groupId = 0
       delete city.groupOrder
@@ -60,8 +64,40 @@ define [
       template: '#tmpl-cities'
     )
 
+    firstLetters = []
+    for city, i in citiesAlphabetical
+      firstLetter = city.name.substring(0,1).toLowerCase()
+      found = false
+      for letter, j in firstLetters
+        if letter.character == firstLetter
+          found = true
+          firstLetters[j].count++
+      if found != true
+        firstLetters.push(
+          character: firstLetter
+          count: 1
+        )
+
+    debug firstLetters
+    firstLetterData =
+      firstLetters: firstLetters
+    debug firstLetterData
+    render(
+      title: 'First Letters'
+      target: 'section.body-1'
+      data: firstLetterData
+      template: '#tmpl-first-letters'
+    )
+
+  sortAlphabetical = (arr, prop) ->
+    newArr = arr
+    newArr = _.sortBy(
+      newArr
+      (o) ->
+        o[prop]
+    )
+    newArr
+
   $(document).ready( ->
     loadData()
   )
-
-

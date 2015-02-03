@@ -21,6 +21,12 @@ header {
 .page-description {
   padding: 0 0 20px 0;
 }
+textarea[data-id="textarea"] {
+  width: 732px;
+  height: 100px;
+  font-family: @font-sans;
+  font-size: 13px;
+}
 table {
   width: 200px;
   padding: 0;
@@ -39,6 +45,12 @@ table {
   th {
     background-color: transparent;
     text-align: left;
+  }
+  &[data-id="first-letters"] {
+    width: 140px;
+    .character {
+      text-transform: uppercase;
+    }
   }
 }
 .page {

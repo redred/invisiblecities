@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache, util) {
   'use strict';
-  var debug, loadData, name, render, renderAll;
+  var debug, loadData, name, render, renderAll, sortAlphabetical;
   name = 'viewCities';
   debug = util.debug;
   loadData = function() {
@@ -25,7 +25,12 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
     return $(opts.target).append(rendered);
   };
   renderAll = function(data) {
-    var citiesAlphabetical, city, _i, _len;
+    var citiesAlphabetical, city, firstLetter, firstLetterData, firstLetters, found, i, j, letter, _i, _j, _k, _len, _len1, _len2;
+    render({
+      target: 'section.body-1',
+      data: data,
+      template: '#tmpl-textarea'
+    });
     render({
       title: 'Groups',
       target: 'section.body-1',
@@ -38,16 +43,13 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
       data: data,
       template: '#tmpl-cities'
     });
-    citiesAlphabetical = data.cities;
-    citiesAlphabetical = _.sortBy(citiesAlphabetical, function(o) {
-      return o.name;
-    });
+    citiesAlphabetical = sortAlphabetical(data.cities, 'name');
     for (_i = 0, _len = citiesAlphabetical.length; _i < _len; _i++) {
       city = citiesAlphabetical[_i];
       city.groupId = 0;
       delete city.groupOrder;
     }
-    return render({
+    render({
       title: 'Cities Alphabetical',
       target: 'section.body-1',
       data: {
@@ -55,6 +57,44 @@ define(['jquery', 'underscore', 'mustache', 'baseUtil'], function($, _, Mustache
       },
       template: '#tmpl-cities'
     });
+    firstLetters = [];
+    for (i = _j = 0, _len1 = citiesAlphabetical.length; _j < _len1; i = ++_j) {
+      city = citiesAlphabetical[i];
+      firstLetter = city.name.substring(0, 1).toLowerCase();
+      found = false;
+      for (j = _k = 0, _len2 = firstLetters.length; _k < _len2; j = ++_k) {
+        letter = firstLetters[j];
+        if (letter.character === firstLetter) {
+          found = true;
+          firstLetters[j].count++;
+        }
+      }
+      if (found !== true) {
+        firstLetters.push({
+          character: firstLetter,
+          count: 1
+        });
+      }
+    }
+    debug(firstLetters);
+    firstLetterData = {
+      firstLetters: firstLetters
+    };
+    debug(firstLetterData);
+    return render({
+      title: 'First Letters',
+      target: 'section.body-1',
+      data: firstLetterData,
+      template: '#tmpl-first-letters'
+    });
+  };
+  sortAlphabetical = function(arr, prop) {
+    var newArr;
+    newArr = arr;
+    newArr = _.sortBy(newArr, function(o) {
+      return o[prop];
+    });
+    return newArr;
   };
   return $(document).ready(function() {
     return loadData();
